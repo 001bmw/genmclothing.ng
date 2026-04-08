@@ -1,0 +1,267 @@
+/* Professional Styling for GNM Clothing */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --dark-green: #0d4f3c;
+    --black: #000000;
+    --gold: #daa520;
+    --light-gold: #ffd700;
+    --dark-bg: #1a1a1a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: var(--dark-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--gold);
+}
+
+.hero {
+    background: linear-gradient(135deg, rgba(13,79,60,0.8), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1920x600?text=GENM+Clothing+Hero');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(13,79,60,0.3);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    background-color: var(--dark-green) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    border-bottom: 2px solid var(--gold);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--light-gold) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #fff !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--light-gold) !important;
+}
+
+.card {
+    background-color: rgba(26,26,26,0.9);
+    border: 1px solid var(--dark-green);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    border-color: var(--gold);
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: var(--gold);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--dark-green), var(--gold));
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, var(--gold), var(--dark-green));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(218,165,32,0.4);
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.about-img {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 2px solid var(--gold);
+}
+
+.testimonial-card {
+    background: linear-gradient(135deg, rgba(26,26,26,0.9), rgba(13,79,60,0.5));
+    border: 1px solid var(--dark-green);
+}
+
+.testimonial-img {
+    border: 3px solid var(--gold);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.contact-img {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 2px solid var(--gold);
+}
+
+footer {
+    background: linear-gradient(135deg, var(--black), var(--dark-green));
+    color: #fff;
+    padding: 40px 0 20px;
+    border-top: 2px solid var(--gold);
+}
+
+footer a {
+    color: var(--light-gold);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--gold);
+}
+
+blockquote-footer {
+    color: var(--gold);
+}
+
+.available-tab {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1040;
+    background: rgba(13, 79, 60, 0.95);
+    border: 1px solid var(--gold);
+    border-radius: 50px;
+    padding: 10px 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.available-tab .btn {
+    color: #000;
+    font-weight: 700;
+}
+
+.admin-widget {
+    position: fixed;
+    bottom: 20px;
+    width: 280px;
+    background-color: rgba(10, 26, 21, 0.96);
+    border: 1px solid rgba(218, 165, 32, 0.8);
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    color: #fff;
+    z-index: 1050;
+}
+
+.admin-login-widget {
+    left: 20px;
+}
+
+.admin-panel-widget {
+    right: 20px;
+}
+
+.admin-widget h5 {
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.btn-gold {
+    background: linear-gradient(45deg, var(--gold), var(--light-gold));
+    color: #000;
+    border: 1px solid var(--gold);
+}
+
+.btn-outline-gold {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+}
+
+.btn-outline-gold:hover {
+    background: rgba(218,165,32,0.15);
+}
+
+.admin-panel-list ul {
+    list-style: disc;
+}
+
+.admin-panel-list li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 992px) {
+    .admin-widget {
+        position: static;
+        width: 100%;
+        margin: 20px auto 0;
+    }
+    .admin-login-widget,
+    .admin-panel-widget {
+        left: auto;
+        right: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .admin-widget {
+        padding: 16px;
+    }
+    .btn-gold,
+    .btn-outline-gold {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}

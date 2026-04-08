@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENM Clothing - Professional Fashion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">GENM Clothing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="text-center">
+            <h1 class="display-4">Welcome to GNM Clothing.ng</h1>
+            <p class="lead">We speak the Fashion Lang </p>
+        </div>
+    </section>
+
+    <div class="available-tab">
+        <button type="button" class="btn btn-gold btn-sm" onclick="showAvailableItems()">View Available Items</button>
+    </div>
+
+    <section id="available-items" class="py-5 section-padding bg-light" style="display: none;">
+        <div class="container">
+            <h2 class="text-center mb-5">Available Items</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+T-Shirts" class="card-img-top" alt="Available T-Shirts">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom T-Shirts</h5>
+                            <p class="card-text">Ready-made samples and styles available for fast customization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Trousers" class="card-img-top" alt="Available Trousers">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Trousers</h5>
+                            <p class="card-text">Available items in premium fabrics, ready to be tailored and shipped quickly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Hoodies" class="card-img-top" alt="Available Hoodies">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Hoodies</h5>
+                            <p class="card-text">Stylish hoodie designs ready for personalization with logos or prints.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Caps" class="card-img-top" alt="Available Caps">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Caps</h5>
+                            <p class="card-text">High-quality caps available now for embroidery and custom branding.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Underwear" class="card-img-top" alt="Available Underwear">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Underwear</h5>
+                            <p class="card-text">Available items with comfort-first fabrics ready for personalization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Shorts" class="card-img-top" alt="Available Shorts">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Shorts</h5>
+                            <p class="card-text">Versatile shorts ready for quick customization and delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2>About Us</h2>
+                    <p>GENM Clothing specializes in bespoke, customized professional attire. We create unique, high-quality clothing tailored to your individual style and needs, ensuring perfect fit and unparalleled elegance for men and women.</p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://via.placeholder.com/500x300?text=About+GENM+Clothing" class="img-fluid rounded about-img" alt="About GNM Clothing">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5 section-padding">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Customization Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Shirts" class="card-img-top" alt="Custom Shirts">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Shirts</h5>
+                            <p class="card-text">Personalized shirts with your choice of fabric, fit, and design elements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Trousers" class="card-img-top" alt="Custom Trousers">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Trousers</h5>
+                            <p class="card-text">Perfectly fitted trousers tailored to your measurements and preferences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+T-Shirts" class="card-img-top" alt="Custom T-Shirts">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom T-Shirts</h5>
+                            <p class="card-text">Unique T-shirts designed with your custom prints and styles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Rings" class="card-img-top" alt="Custom Rings">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Rings</h5>
+                            <p class="card-text">Personalized rings crafted to your specifications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Caps" class="card-img-top" alt="Custom Caps">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Caps</h5>
+                            <p class="card-text">Bespoke caps with custom embroidery and designs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Prayer+Mats" class="card-img-top" alt="Custom Prayer Mats">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Prayer Mats</h5>
+                            <p class="card-text">Personalized prayer mats with custom patterns and materials.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Frames" class="card-img-top" alt="Custom Frames">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Frames</h5>
+                            <p class="card-text">Tailored frames for photos, art, or special occasions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Hoodies" class="card-img-top" alt="Custom Hoodies">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Hoodies</h5>
+                            <p class="card-text">Comfortable hoodies with custom prints and fits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Underwear" class="card-img-top" alt="Custom Underwear">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Underwear</h5>
+                            <p class="card-text">Personalized underwear for ultimate comfort and style.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Custom+Shorts" class="card-img-top" alt="Custom Shorts">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Shorts</h5>
+                            <p class="card-text">Tailored shorts designed to your perfect fit and design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-5 section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 testimonial-card">
+                        <img src="https://via.placeholder.com/100x100?text=JD" class="card-img-top mx-auto mt-3 rounded-circle testimonial-img" alt="Client 1" style="width: 100px; height: 100px;">
+                        <div class="card-body text-center">
+                            <p class="card-text">"GENM Clothing created the perfect custom T-shirt for my wedding. The attention to detail was exceptional!"</p>
+                            <footer class="blockquote-footer">John Doe</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 testimonial-card">
+                        <img src="https://via.placeholder.com/100x100?text=JS" class="card-img-top mx-auto mt-3 rounded-circle testimonial-img" alt="Client 2" style="width: 100px; height: 100px;">
+                        <div class="card-body text-center">
+                            <p class="card-text">"Their custom hoodies fit like a dream. Highly recommend for personalized attire."</p>
+                            <footer class="blockquote-footer">Jane Smith</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 testimonial-card">
+                        <img src="https://via.placeholder.com/100x100?text=EJ" class="card-img-top mx-auto mt-3 rounded-circle testimonial-img" alt="Client 3" style="width: 100px; height: 100px;">
+                        <div class="card-body text-center">
+                            <p class="card-text">"Outstanding quality and service. My custom cap exceeded all expectations."</p>
+                            <footer class="blockquote-footer">Emily Johnson</footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5 section-padding">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/300x200?text=Portfolio+1" class="img-fluid rounded" alt="Portfolio 1">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/300x200?text=Portfolio+2" class="img-fluid rounded" alt="Portfolio 2">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/300x200?text=Portfolio+3" class="img-fluid rounded" alt="Portfolio 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 section-padding">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Get In Touch</h4>
+                    <img src="https://via.placeholder.com/400x200?text=Contact+Us" class="img-fluid mb-3 contact-img" alt="Contact GNM Clothing">
+                    <p class="contact-email"><i class="fas fa-envelope me-2"></i>Email: genmclothing15@gmail.com</p>
+                    <p class="contact-phone"><i class="fas fa-phone me-2"></i>Phone: 09066999618</p>
+                    <p class="contact-address"><i class="fas fa-map-marker-alt me-2"></i>Address: Kano, Nigeria</p>
+                    <p class="contact-website"><i class="fas fa-globe me-2"></i>Website: <a href="https://genmclothing.ng" target="_blank" rel="noopener">genmclothing.ng</a></p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="admin-widget admin-login-widget">
+        <h5 class="mb-3">Admin Login</h5>
+        <form id="adminLoginForm">
+            <div class="mb-2">
+                <input type="text" class="form-control form-control-sm" id="adminUsername" placeholder="Username" required>
+            </div>
+            <div class="mb-2">
+                <input type="password" class="form-control form-control-sm" id="adminPassword" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-gold btn-sm w-100">Login</button>
+            <small class="text-muted d-block mt-2">Admin access only. Customers do not need to sign up.</small>
+        </form>
+    </div>
+
+    <div class="admin-widget admin-panel-widget d-none" id="adminPanel">
+        <h5 class="mb-3">Admin Panel</h5>
+        <p class="mb-2">Welcome, Admin.</p>
+        <button class="btn btn-outline-gold btn-sm mb-2" id="logoutAdmin">Logout</button>
+        <div class="admin-panel-list">
+            <p class="mb-1"><strong>Quick Actions:</strong></p>
+            <ul class="ps-3">
+                <li>Review customer messages</li>
+                <li>Update product samples</li>
+                <li>Manage inventory notes</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="py-4">
+        <div class="container text-center">
+            <p>&copy; 2026 MTK Group of Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const adminLoginForm = document.getElementById('adminLoginForm');
+        const adminPanel = document.getElementById('adminPanel');
+        const logoutAdmin = document.getElementById('logoutAdmin');
+
+        adminLoginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('adminUsername').value.trim();
+            const password = document.getElementById('adminPassword').value.trim();
+
+            // Example admin credentials. Replace with secure authentication in production.
+            if (username === 'admin' && password === 'admin123') {
+                adminPanel.classList.remove('d-none');
+                document.querySelector('.admin-login-widget').classList.add('d-none');
+            } else {
+                alert('Invalid admin credentials.');
+            }
+        });
+
+        logoutAdmin.addEventListener('click', function() {
+            adminPanel.classList.add('d-none');
+            document.querySelector('.admin-login-widget').classList.remove('d-none');
+            adminLoginForm.reset();
+        });
+
+        function showAvailableItems() {
+            const availableSection = document.getElementById('available-items');
+            if (availableSection.style.display === 'none') {
+                availableSection.style.display = 'block';
+                availableSection.scrollIntoView({behavior: 'smooth'});
+            }
+        }
+    </script>
+</body>
+</html>
